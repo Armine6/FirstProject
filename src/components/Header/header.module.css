@@ -1,0 +1,9 @@
+.headerpart{
+   
+    display: flex;
+    justify-content: space-around;
+}
+.headerpart .manu{
+    display: flex;
+    justify-content: space-around;
+}
