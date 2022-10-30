@@ -1,9 +1,9 @@
 import React from 'react'
-import styles from './myInput.module.css'
+
 
  const MyInput = ({...props}) => {
   return (
-    <input {...props} className={styles.MyInputStyle}/>
+    <input {...props} style ={{background: "rgb(19,19,19)", color:"white"} }/>
   )
 }
 export default MyInput

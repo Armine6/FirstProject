@@ -1,0 +1,26 @@
+.modalBody{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   background-color:rgb(23, 22, 22);
+   opacity: 0;
+   visibility: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.modalBody.active{
+opacity: 1;
+visibility: visible;
+}
+.modalContent{
+ min-width: 300px;
+ min-height:  250px;
+ border-radius: 20px;
+ background-color: aliceblue;
+ color: black;
+
+}

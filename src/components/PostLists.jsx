@@ -1,13 +1,22 @@
 import React from 'react'
+import FilterPost from './FilterPost'
 import PostItem from './PostItem'
 
 
- const PostLists = ({details}) => {
+
+ const PostLists = ({details,modalChange,filter,setFilter}) => {
   return (
-    <div className='postListStyle'>
-            {details.map(item => (<PostItem id={item.id} title= {item.title} price={item.price} value= {item.value} inform={item.information} img={item.img} />))}
+    <div >
+     <div className='filter'>
+     <FilterPost filter={filter} setFilter={setFilter}/> 
+     </div>
+     <div className='postListStyle'>
+     {details.map(item => (<PostItem   key={item.id} id={item.id} value= {item.value} img={item.img} modalChange={modalChange} />))}
+     </div>
+           
         
     </div>
   )
 }
+
 export default PostLists

@@ -16,7 +16,8 @@ import SortInform from './UI/sortInform/SortInform'
 
     <MyInput 
     value ={filter.searchQuery} 
-    OnChange ={e=> setFilter({...filter,searchQuery: e.target.value})}/>
+    onChange ={e=> setFilter({...filter, searchQuery: e.target.value})}/>
+    {console.log(filter.searchQuery)};
     </div>
     
   )

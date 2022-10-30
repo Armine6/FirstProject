@@ -1,8 +1,12 @@
 import React from 'react'
+import Header from '../Pages/Header'
 
 const Prices = () => {
   return (
-    <div>Prices</div>
+    <div>
+      <Header/>
+    
+      </div>
   )
 }
 export default Prices
